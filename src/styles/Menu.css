@@ -71,14 +71,14 @@
     display: flex;
     align-items: center;
     height: 60%;
-    font-family: "DM Serif Text", serif;
-    font-weight: 500;
+    /* font-family: "DM Serif Text", serif; */
+    font-weight: 600;
     padding: 10px 0 10px 0;
 }
 
 .mensaje .referencia {
-    font-size: 20pt;
-    font-family: "DM Serif Text", serif;
+    font-size: clamp(12pt, 1.5vw, 22pt);
+    /* font-family: "DM Serif Text", serif; */
     font-weight: 300;
     height: 40%;
 }

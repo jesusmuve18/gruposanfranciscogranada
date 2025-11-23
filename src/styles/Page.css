@@ -1,0 +1,31 @@
+.contenedor {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagina {
+    width: clamp(700px, 50vw, 1200px); /*clamp(min, preferred, max)*/
+    padding: 20px;
+    font-size: 18pt;
+    line-height: 1.5em;
+}
+
+.seccion {
+    width: auto;
+    padding: 0 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seccion h1 {
+    line-height: 1em;
+    text-align: center;
+}
+
+.seccion p {
+    text-align: justify;
+}

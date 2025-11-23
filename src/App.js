@@ -1,5 +1,5 @@
 import {Menu} from './components/Menu'
-import { Display } from './components/Display';
+import { Page } from './components/Page';
 import React, { useState } from 'react';
 
 import './App.css';
@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <Menu selected={selected} setSelected={setSelected}/>
-      <Display content={selected}/>
+      <Page selected={selected}/>
     </>
   );
 }
