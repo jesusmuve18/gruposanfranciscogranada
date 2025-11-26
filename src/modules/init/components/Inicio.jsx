@@ -1,7 +1,5 @@
-import React from "react"
-import FadeItem from "./FadeItem";
-
-import '../styles/Page.css'
+import '../../../lib/styles/Page.css'
+import FadeItem from "../../../lib/components/FadeItem"
 
 export const Inicio = () => {
   return(

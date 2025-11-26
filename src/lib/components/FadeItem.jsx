@@ -1,5 +1,4 @@
-import React from "react";
-import { useFadeOnScroll } from "./useFadeOnScroll";
+import { useFadeOnScroll } from "../hooks/useFadeOnScroll";
 
 export default function FadeItem({ children, className }) {
   const [ref, isVisible] = useFadeOnScroll();

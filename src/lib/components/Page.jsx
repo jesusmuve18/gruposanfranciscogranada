@@ -1,6 +1,5 @@
-import React from "react"
-import {Inicio} from './Inicio'
-import {Ministerios} from './Ministerios'
+import {Inicio} from '../../modules/init/components/Inicio'
+import {Ministerios} from '../../modules/ministerios/components/Ministerios'
 
 import '../styles/Page.css'
 
@@ -10,10 +9,8 @@ export const Page = (props) => {
         switch (props.selected){
             case 'pagina-principal':
                 return <Inicio/>
-                break;
             case 'ministerios':
                 return <Ministerios/>
-                break;
             default:
                 return ""
         }

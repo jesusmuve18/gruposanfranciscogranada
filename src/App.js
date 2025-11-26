@@ -1,8 +1,7 @@
-import {Menu} from './components/Menu'
-import { Page } from './components/Page';
-import React, { useState } from 'react';
-
-import './App.css';
+import { useState } from 'react'
+import './App.css'
+import { Menu } from './modules/menu/components/Menu'
+import { Page } from './lib/components/Page'
 
 function App() {
   const [selected, setSelected] = useState("pagina-principal")

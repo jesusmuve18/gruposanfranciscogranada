@@ -1,5 +1,5 @@
-import React from "react"
-import FadeItem from "./FadeItem";
+import FadeItem from "../../../lib/components/FadeItem"
+
 
 export const Ministerios = () => {
   return(
