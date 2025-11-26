@@ -1,5 +1,8 @@
 .Menu {
-  position: relative;
+  /* position: relative; */
+  position: sticky;
+  z-index: 10;
+  top: 0;
   width: 100%;
   display: inline-block; /* Deja que tome el tamaño natural del contenido */
 }
