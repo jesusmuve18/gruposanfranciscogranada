@@ -1,14 +1,12 @@
-import { useState } from 'react'
-import './App.css'
-import { Menu } from './modules/menu/components/Menu'
-import { Page } from './lib/components/Page'
+import "./App.css";
+import { Menu } from "./modules/menu/components/Menu";
+import { Outlet } from "react-router-dom";
 
 function App() {
-
   return (
     <>
       <Menu />
-      <Page />
+      <Outlet />
     </>
   );
 }

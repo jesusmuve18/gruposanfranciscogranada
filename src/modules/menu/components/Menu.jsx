@@ -43,9 +43,9 @@ export const Menu = () => {
               name={"Ministerios"}
               link={"ministerios"}
               subItems={[
-                { name: "Oración", link: "ministerio-oracion" },
-                { name: "Música", link: "ministerio-musica" },
-                { name: "Liturgia", link: "ministerio-liturgia" },
+                { name: "Oración", link: "ministerios/oracion" },
+                { name: "Música", link: "ministerios/musica" },
+                { name: "Liturgia", link: "ministerios/liturgia" },
               ]}
             />
             <MenuItem name={"Contacto"} link={"contacto"} />

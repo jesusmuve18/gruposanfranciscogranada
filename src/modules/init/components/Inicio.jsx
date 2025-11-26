@@ -1,16 +1,20 @@
-import '../../../lib/styles/Page.css'
-import FadeItem from "../../../lib/components/FadeItem"
+import "../../../lib/styles/Page.css";
+import FadeItem from "../../../lib/components/FadeItem";
+import { Page } from "../../../lib/components/Page";
 
 export const Inicio = () => {
-  return(
-    <>
+  return (
+    <Page>
       <div className="seccion">
         <FadeItem>
           <h1>¿Quiénes somos?</h1>
         </FadeItem>
         <FadeItem>
           <p>
-            La comunidad de la iglesia de San Francisco de granada es un grupo de hermanos que se reúnen para celebrar la fe al modo de Francisco de Asís. El núcleo de su actividad se centra en la oración y eucaristía comunitarias.
+            La comunidad de la iglesia de San Francisco de granada es un grupo
+            de hermanos que se reúnen para celebrar la fe al modo de Francisco
+            de Asís. El núcleo de su actividad se centra en la oración y
+            eucaristía comunitarias.
           </p>
         </FadeItem>
       </div>
@@ -21,7 +25,14 @@ export const Inicio = () => {
         </FadeItem>
         <FadeItem>
           <p>
-            Fue un religioso italiano que renunció a su vida acomodada para vivir en absoluta pobreza, predicando la humildad, la paz y el amor por todas las criaturas. Fundó la Orden de los Hermanos Menores (conocida como franciscanos) y es reconocido por su profunda espiritualidad, su cercanía con la naturaleza y su influencia en la renovación de la vida cristiana medieval. Es uno de los santos más venerados de la Iglesia Católica y patrón de los animales y del medio ambiente.
+            Fue un religioso italiano que renunció a su vida acomodada para
+            vivir en absoluta pobreza, predicando la humildad, la paz y el amor
+            por todas las criaturas. Fundó la Orden de los Hermanos Menores
+            (conocida como franciscanos) y es reconocido por su profunda
+            espiritualidad, su cercanía con la naturaleza y su influencia en la
+            renovación de la vida cristiana medieval. Es uno de los santos más
+            venerados de la Iglesia Católica y patrón de los animales y del
+            medio ambiente.
           </p>
         </FadeItem>
       </div>
@@ -52,16 +63,18 @@ export const Inicio = () => {
         </FadeItem>
       </div> */}
 
-       <div className="seccion">
+      <div className="seccion">
         <FadeItem>
           <h1>¿Cuáles son los objetivos del Grupo San Francisco?</h1>
         </FadeItem>
         <FadeItem>
           <p>
-            El grupo de San Francisco, enraizado en la espiritualidad del "Poverello", no pretende otra cosa que seguir a Jesucristo creando comunidad Fraterna.
+            El grupo de San Francisco, enraizado en la espiritualidad del
+            "Poverello", no pretende otra cosa que seguir a Jesucristo creando
+            comunidad Fraterna.
           </p>
         </FadeItem>
       </div>
-    </>
-  )
-}
+    </Page>
+  );
+};

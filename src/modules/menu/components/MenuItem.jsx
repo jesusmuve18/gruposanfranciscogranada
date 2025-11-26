@@ -1,13 +1,16 @@
 import { useContext } from "react";
 import "../styles/MenuItem.css";
 import GeneralContext from "../../../lib/context";
+import { useNavigate } from "react-router-dom";
 
 export const MenuItem = (props) => {
   const { menuSelected, setMenuSelected, submenuOpen, setSubmenuOpen } =
     useContext(GeneralContext);
+  const navigate = useNavigate();
 
   const select = (item) => {
     setMenuSelected(item.link);
+    navigate(`/${item.link}`);
   };
 
   const selected = () => {
@@ -19,10 +22,11 @@ export const MenuItem = (props) => {
   const handleClick = () => {
     if (hasSubItems) {
       setSubmenuOpen(!submenuOpen);
-      select(props);
+      setMenuSelected(props.link);
     } else {
       setSubmenuOpen(false);
       select(props);
+      navigate(`/${props.link}`);
     }
   };
 
