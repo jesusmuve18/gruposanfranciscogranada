@@ -1,8 +1,18 @@
 import "../../../lib/styles/Page.css";
 import FadeItem from "../../../lib/components/FadeItem";
 import { Page } from "../../../lib/components/Page";
+import GridCards from "../../../lib/components/GridCards";
 
 export const Inicio = () => {
+  const itemsOrarCantarCrecer = [
+    { label: "Paz y Bien", link: "/paz-y-bien" },
+    { label: "Cancionero", link: "/cancionero" },
+    { label: "Materiales", link: "/materiales" },
+    { label: "Calendario", link: "/calendario" },
+    { label: "Oraciones", link: "/oraciones" },
+    { label: "Charlas", link: "/charlas" },
+  ];
+
   return (
     <Page>
       <div className="seccion">
@@ -73,6 +83,15 @@ export const Inicio = () => {
             "Poverello", no pretende otra cosa que seguir a Jesucristo creando
             comunidad Fraterna.
           </p>
+        </FadeItem>
+      </div>
+
+      <div className="seccion">
+        <FadeItem>
+          <h1>Orar, cantar y crecer</h1>
+        </FadeItem>
+        <FadeItem>
+          <GridCards items={itemsOrarCantarCrecer} />
         </FadeItem>
       </div>
     </Page>

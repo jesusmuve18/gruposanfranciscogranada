@@ -14,9 +14,10 @@
 }
 
 .menu-item.selected {
-    background-color: beige;
+    background-color: #ECD7BD;
     border-radius: 12px;
     font-weight: 600;
+    color: #E89568;
 }
 
 .bar-selected {
@@ -29,7 +30,7 @@
     position: absolute;
     top: 100%;
     left: 0;
-    background: white;
+    background-color: #ECD7BD;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     overflow: hidden;
