@@ -23,11 +23,13 @@ h1 {
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-  pointer-events: none; /* opcional si quieres que no interactúe mientras invisible */
+  pointer-events: auto; /* opcional si quieres que no interactúe mientras invisible */
+  width: 100%;
 }
 
 .fade-up.visible {
   opacity: 1;
   transform: translateY(0);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out; /* solo entra */
+  width: 100%;
 }
