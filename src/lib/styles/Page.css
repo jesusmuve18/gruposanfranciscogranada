@@ -8,7 +8,7 @@
 .pagina {
     width: clamp(700px, 50vw, 1200px); /*clamp(min, preferred, max)*/
     padding: 20px;
-    font-size: 18pt;
+    font-size: 15pt;
     line-height: 1.5em;
 }
 

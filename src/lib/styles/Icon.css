@@ -1,0 +1,19 @@
+
+/* Info items */
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.social-icon {
+  color: #333;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.social-icon:hover {
+  color: #2d6a4f;
+}
