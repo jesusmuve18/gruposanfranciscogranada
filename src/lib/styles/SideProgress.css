@@ -1,0 +1,46 @@
+:root {
+  --header-height: 160px; /* AJUSTA ESTE VALOR */
+}
+
+.side-progress {
+  position: fixed;
+  top: calc(var(--header-height) + 50px); 
+  left: 2.5%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 100;
+  font-family: inherit;
+}
+
+.side-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.side-item:hover {
+  opacity: 1;
+}
+
+.side-item.active {
+  opacity: 1;
+}
+
+.side-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #b98b67;
+  background-color: transparent;
+  transition: all 0.3s;
+}
+
+.side-item.active .side-dot {
+  background-color: #b98b67;
+  transform: scale(1.3);
+}
