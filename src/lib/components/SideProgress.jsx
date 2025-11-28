@@ -53,7 +53,7 @@ export const SideProgress = ({ sections }) => {
       element.getBoundingClientRect().top +
       window.pageYOffset -
       headerHeight -
-      10; // pequeño margen
+      10;
 
     window.scrollTo({
       top,
@@ -62,17 +62,19 @@ export const SideProgress = ({ sections }) => {
   };
 
   return (
-    <div className="side-progress">
-      {sections.map((s) => (
-        <div
-          key={s.id}
-          className={`side-item ${active === s.id ? "active" : ""}`}
-          onClick={() => scrollToSection(s.id)}
-        >
-          <div className="side-dot"></div>
-          <span>{s.title}</span>
-        </div>
-      ))}
-    </div>
+    <>
+      <div className="side-progress-section">
+        {sections.map((s) => (
+          <div
+            key={s.id}
+            className={`side-item ${active === s.id ? "active" : ""}`}
+            onClick={() => scrollToSection(s.id)}
+          >
+            <div className="side-dot"></div>
+            <span>{s.title}</span>
+          </div>
+        ))}
+      </div>
+    </>
   );
 };

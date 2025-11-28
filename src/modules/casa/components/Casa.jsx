@@ -3,7 +3,7 @@ import "../styles/Calendario.css";
 
 export const Casa = () => {
 
-  const sections = [
+  const sectionsCasa = [
     {
       id: "casa",
       title: "Casa Dúdar",
@@ -79,6 +79,25 @@ export const Casa = () => {
       ),
     }
   ];
+  const sectionsComoLlegar = [
+    {
+      id: "como-llegar",
+      title: "¿Cómo llegar?",
+      content: (<p>Llegoo</p>),
+    },
+  ];
+  const subpages = [
+    {
+      id: "casa",
+      title: "Casa",
+      sections: sectionsCasa,
+    },
+    {
+      id: "como-llegar",
+      title: "Cómo llegar",
+      sections: sectionsComoLlegar,
+    },
+  ];
 
-  return <Page sections={sections} ></Page>;
+  return <Page subpages={subpages} />;
 };
