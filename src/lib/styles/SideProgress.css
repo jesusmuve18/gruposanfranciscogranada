@@ -1,12 +1,12 @@
 :root {
-  --header-height: 160px; /* AJUSTA ESTE VALOR */
+  --header-height: 150px; /* AJUSTA ESTE VALOR */
 }
 
 .side-progress {
   position: fixed;
-  top: calc(var(--header-height) + 50px); 
+  top: calc(var(--header-height) + 40px);
   left: 2.5%;
-  transform: translateY(-50%);
+  /* transform: translateY(-40%); */
   display: flex;
   flex-direction: column;
   gap: 12px;

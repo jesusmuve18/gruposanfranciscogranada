@@ -1,7 +1,6 @@
 import { SideProgress } from "./SideProgress";
 
 export const SideProgressPages = ({ pages, activePage, setActivePage }) => {
-
   const current = pages.find((p) => p.id === activePage);
 
   return (
@@ -16,8 +15,10 @@ export const SideProgressPages = ({ pages, activePage, setActivePage }) => {
               <div className="side-dot"></div>
               <span>{page.title}</span>
             </div>
-            {activePage === page.id && (
-              <SideProgress sections={current.sections} />
+            {activePage === page.id && current.sections.length > 1 && (
+              <div style={{ marginTop: "12px" }}>
+                <SideProgress sections={current.sections} />
+              </div>
             )}
           </div>
         ))}
