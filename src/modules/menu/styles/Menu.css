@@ -11,7 +11,8 @@
   width: 100%;
   display: block;
   object-fit: cover;
-  transition: max-height 0.5s ease; /* transición suave */
+  /*transition: max-height 0.5s ease; /*transición suave */
+  transition: max-height 0.3s ease-out;
 }
 
 .menu-img.tall {

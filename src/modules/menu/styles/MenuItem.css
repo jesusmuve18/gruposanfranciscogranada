@@ -17,7 +17,8 @@
     background-color: #ECD7BD;
     border-radius: 12px;
     font-weight: 600;
-    color: #E89568;
+    /* color: #E89568; */
+    color: #78460F
 }
 
 .bar-selected {

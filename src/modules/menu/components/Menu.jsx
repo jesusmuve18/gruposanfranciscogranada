@@ -12,13 +12,45 @@ export const Menu = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
+    let startY = 0;
+
+    // Detectar la rueda del ratón (PC)
+    const handleWheel = (e) => {
+      if (e.deltaY > 0) {
+        // Rueda hacia abajo: encoge inmediatamente
+        setIsScrolled(true);
+      } else if (e.deltaY < 0 && window.scrollY === 0) {
+        // Rueda hacia arriba Y estamos al principio de la página: vuelve a crecer
+        setIsScrolled(false);
+      }
     };
 
-    window.addEventListener("scroll", handleScroll);
+    // Detectar dónde pone el dedo el usuario (Móvil)
+    const handleTouchStart = (e) => {
+      startY = e.touches[0].clientY;
+    };
 
-    return () => window.removeEventListener("scroll", handleScroll);
+    // Detectar hacia dónde mueve el dedo (Móvil)
+    const handleTouchMove = (e) => {
+      const currentY = e.touches[0].clientY;
+      const deltaY = startY - currentY; // Positivo si arrastra hacia arriba (baja la página)
+
+      if (deltaY > 10) {
+        setIsScrolled(true);
+      } else if (deltaY < -10 && window.scrollY === 0) {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("wheel", handleWheel);
+    window.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("touchmove", handleTouchMove);
+
+    return () => {
+      window.removeEventListener("wheel", handleWheel);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
+    };
   }, []);
 
   const isTall = menuSelected === "pagina-principal" && !isScrolled;
