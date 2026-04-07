@@ -3,7 +3,7 @@ import "../styles/Menu.css";
 import { Logo } from "../../../lib/components/Logo";
 import { MenuItem } from "./MenuItem";
 import FadeItem from "../../../lib/components/FadeItem";
-import imagenApostoles from "../../../img/apostoles.jpg";
+import imagenApostoles from "../../../img/apostoles_IA.png";
 import GeneralContext from "../../../lib/context";
 
 export const Menu = () => {

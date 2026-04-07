@@ -9,6 +9,7 @@ import {
   MapPin,
   FacebookLogo,
   InstagramLogo,
+  YoutubeLogo
 } from "phosphor-react";
 
 export const Contacto = () => {
@@ -48,6 +49,12 @@ export const Contacto = () => {
                   title="sanfran.granada"
                   color="#78460F"
                   url="https://www.instagram.com/sanfran.granada/"
+                />
+                <Icon
+                  icon={YoutubeLogo}
+                  title="GrupoSanFrancisco"
+                  color="#78460F"
+                  url="https://www.youtube.com/@GrupoSanFrancisco"
                 />
               </div>
             </Card>
